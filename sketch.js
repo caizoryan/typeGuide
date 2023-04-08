@@ -4,7 +4,6 @@ let w = WIDTH_INCHES * 96;
 let h = HEIGHT_INCHES * 96;
 let fSize = 9; // 8pts
 let font;
-let sponsorName = "McCulloch International Arts Council Ltd.";
 let nameArray = names.split(", ").sort();
 
 // loop through nameArray
