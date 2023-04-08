@@ -1,5 +1,5 @@
 let d1 =
-  "Coding. Light. Movement. And, of course, Typography! Surround yourself with a brilliant expression of typographic form and space, where art and technology work together to become instructional, cultural, and educational. end";
+  "Coding. Light. Movement. And, of course, Typography! Surround yourself with a brilliant expression of typographic form and space, where art and technology work together to become instructional, cultural, and educational.";
 let d2 =
   "In our current world, nothing is permanent. Robotics, automation, AI (artificial intelligence), multiple realities, and worldwide networks. These innovations are impacting the way we work, how we relate to one another, and the way we play and express our creativity. Here, at Hyperbolic C0d3x, you can experience this new and ever-changing world through emerging technologies visually expressed with typographic excellence.";
 let d3 =
