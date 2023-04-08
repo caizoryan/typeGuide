@@ -13,15 +13,42 @@
   </head>
 
   <style>
+    @import url("https://use.typekit.net/uql2jlv.css");
     * {
       margin: 0;
       padding: 0;
     }
+    .container {
+      display: flex;
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      flex-wrap: wrap;
+    }
+    p {
+      font-family: "aktiv-grotesk";
+      font-weight: 200;
+      font-size: 12px;
+      line-height: 15px;
+    }
+    .alphabet {
+      font-weight: 100;
+      color: blue;
+      font-size: 20px;
+    }
+
+    span {
+      text-overflow: none;
+    }
     #p5 {
+      position: fixed;
+      top: 10px;
+      left: 10px;
     }
   </style>
   <body>
     <div id="p5"></div>
+    <div class="container"><p class="names"></p></div>
   </body>
   <script src="text.js"></script>
   <script src="sketch.js"></script>
