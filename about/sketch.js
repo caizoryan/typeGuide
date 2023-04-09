@@ -67,8 +67,7 @@ function draw() {
   noFill();
   strokeWeight(1);
   stroke(0);
-  rect(0, 0, width, height);
-  line(center.x, 0, center.x, height);
+  // rect(0, 0, width, height); line(center.x, 0, center.x, height);
   noStroke();
   renderBoxes(boxes);
   fill(0);
@@ -103,7 +102,7 @@ function renderBoxes(words) {
       push();
       translate(pos.x, pos.y + x * tw);
       rotate(map(pos.y + x * tw, 0, 100, 1, 0));
-      rect(0, 0, 3, 800 / tw);
+      rect(0, 3, 800 / tw);
       pop();
       fill(0);
       fill(255, 0);
