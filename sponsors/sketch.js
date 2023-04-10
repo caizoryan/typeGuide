@@ -2,7 +2,7 @@ let WIDTH_INCHES = 9;
 let HEIGHT_INCHES = 6.5;
 let w = WIDTH_INCHES * 96;
 let h = HEIGHT_INCHES * 96;
-let fSize = 10.25; // 8pts
+let fSize = 10.2; // 8pts
 let hairline, thin, regular, medium, bold;
 let temp = names.sort((a, b) =>
   a.name.substring(0).localeCompare(b.name.substring(0))
@@ -12,7 +12,7 @@ let linesToRender = [];
 let nameArray = [...new Set(temp)];
 nameArray.push({ name: "end", tier: "7blank" });
 function preload() {
-  // hairline = loadFont("./fonts/hairline.otf");
+  hairline = loadFont("./fonts/hairline.otf");
   thin = loadFont("./fonts/thin.otf");
   regular = loadFont("./fonts/regular.otf");
   // medium = loadFont("./fonts/medium.otf");
@@ -54,7 +54,6 @@ function render(lines) {
       person = lines[y].people[x];
       let txt;
       // styling
-      console.log(person.tier);
       fill(0);
       textSize(fSize);
       textFont(regular);
@@ -91,9 +90,14 @@ function render(lines) {
         fill(255);
       } else if (person.tier === "3") {
         txt = person.name;
-        fill(255, 0, 255, 200);
-        // circle(
-        //   person.position.x + textWidth(person.name),
+        fill(255, 0, 255);
+        rect(
+          person.position.x + textWidth(person.name) * 0.6,
+          person.position.y - margin / 2,
+          margin * 4,
+          margin * 0.6
+        );
+        // circle( person.position.x + textWidth(person.name),
         //   person.position.y - margin / 2,
         //   margin
         // );
@@ -102,6 +106,13 @@ function render(lines) {
       } else if (person.tier === "4") {
         txt = person.name;
         textFont(bold);
+        fill(255, 255, 0);
+        rect(
+          person.position.x + textWidth(person.name) * 0.4,
+          person.position.y - margin / 2,
+          margin * 4,
+          margin * 0.6
+        );
         fill(0, 200);
       } else if (person.tier === "5") {
         txt = person.name;
@@ -122,6 +133,14 @@ function render(lines) {
         txt = person.name;
       }
       text(txt, person.position.x, person.position.y);
+      let tw = textWidth(txt);
+      fill(0, 127);
+      textFont(hairline);
+      text(
+        "+",
+        person.position.x + tw + lines[y].extraSpace / 12,
+        person.position.y
+      );
     }
   }
 }
@@ -132,7 +151,7 @@ function addPositions(lines) {
     for (let x = 0; x < lines[y].people.length; x++) {
       let person = lines[y].people[x];
       let space = lines[y].extraSpace / lines[y].people.length - 1;
-      person.position = { x: lastWidth + 10, y: 48 + fSize + y * 17.3 };
+      person.position = { x: lastWidth + 10, y: 44 + fSize + y * 17.3 };
       lastWidth += textWidth(person.name) + 10 + space;
     }
   }

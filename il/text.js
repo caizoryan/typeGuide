@@ -1,0 +1,13 @@
+let d1 =
+  "Coded Characters invites visitors to move plastic shapes and letters onto a table, and the arrangement was projected onto a screen with different lines and colours bouncing off of it.";
+let d2 =
+  "The colours, lines, and patterns are automatically generated through a sequence of algorithmic calculations based on the shape placed on the table. Even if you place the same letters, in the same sequence, in the same position you will never see the same pattern twice.";
+let bio1 =
+  "Zachary Lieberman is an artist, researcher, and educator with a simple goal: he wants you surprised. In his work, he creates performances and installations that take human gesture as input and amplify them in different ways -- making drawings come to life, imagining what the voice might look like if we could see it, transforming people's silhouettes into music. He's been listed as one of Fast Company's Most Creative People and his projects have won the Golden Nica from Ars Electronica, Interactive Design of the Year from Design Museum London as well as listed in Time Magazine's Best Inventions of the Year.  He creates artwork through writing software and is a co-creator of openFrameworks, an open source C++ toolkit for creative coding and helped co-found the School for Poetic Computation, a school examining the lyrical possibilities of code.";
+
+let bio2 =
+  "Artist and director Kristin Lucas plumbs the storytelling capacity of emerging technologies and innovates playful new modes of experimentation that create pathways to agency, introducing alternatives to dire thoughts about human activity. Lucas is the recent recipient of numerous grants and residencies, including an Engadget Alternate Realities Grant and a Pioneer Works Tech Residency. Her work is represented by And/Or Gallery in Los Angeles, and Postmasters and Electronic Arts Intermix in New York. She holds degrees from The Cooper Union and Stanford University and teaches in the art department of the University of Texas at Austin.";
+
+let d3 =
+  "Dance with flARmingos pays homage to the flamingo and aspires to transform human-flamingo relationships through a synthesis of magical realism, tech innovation, and conservation science. Participants engage with immersive media experiences and apps that stage kinship between humans and flamingos in social, fun and ecologically-ethical ways. The series expands to include moving image animation, laser beam animation, and neon flamingos and is made in partnership with Tour du Valat, a research institute for the conservation of Mediterranean wetlands in Arles, France; and in part through collaboration with a team of artists, scientists, and technologists. ";
+let why = "Created by Kristin Lucas";
